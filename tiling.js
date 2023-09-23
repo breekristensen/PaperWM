@@ -25,7 +25,8 @@ const display = global.display;
 /** @type {Spaces} */
 var spaces; // export
 
-let borderWidth = 8;
+//let borderWidth = 8;
+let borderWidth = 0;
 
 // Mutter prevints windows from being placed further off the screen than 75 pixels.
 var stack_margin = 75; // export
@@ -1405,6 +1406,8 @@ border-radius: ${borderWidth}px;
                 reactive: true, // Disable the background menu
             }, backgroundParams)
         );
+
+        this.background.hide();
 
         if (this.background.content) {
             this.background.content.set({
