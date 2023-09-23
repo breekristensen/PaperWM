@@ -60,3 +60,10 @@ NOTE: please update `./config/users.css` with any new styles added here.
     border: 0; /* disable border to calm it down a bit */
     border-radius: 1px;
 }
+
+.paperwm-selection {
+    /* matches border radius of default gnome windows */
+    border-radius: 14px 14px 14px 14px;
+    background-color: rgba(212, 190, 152, 0.5) !important;
+    border-color: rgba(212, 190, 152, 0.0) !important;
+}
